@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Audiowide", sans-serif;
+}
+.wrapper{
+    height: 100vh;
+    width:100vw;
+    background-image: url(./assets/img1.jpg);
+
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+
+.game-info{
+    display: flex;
+    position:absolute;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    background-color: white;
+    top:3rem;
+    /* transform: translateX(-50); */
+    padding:0.5rem 3rem;
+    border-radius:1rem;
+}
+
+.tic-tac-toe{
+    width: 90%;
+    /* position:absolute; */
+    max-width: 20rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding:2rem;  /*line center */
+    /* margin-top: 6rem;
+    margin-bottom: 6rem; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    aspect-ratio: 1/1;
+    border-radius: 1rem;
+    border:2px solid white;
+}
+
+.box{
+   position: relative;
+   width:100%;
+   cursor: pointer;
+   aspect-ratio: 1/1;
+   font-size: 3rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+/* applying border for lining */
+.box1, .box2, .box4, .box5{
+ border-right:2px solid white;
+ border-bottom: 2px solid white;
+}
+.box3, .box6{
+    border-bottom: 2px solid white;
+}
+
+.box7 , .box8{
+    border-right:2px solid white;
+    
+}
+
+.btn{
+    position:absolute;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 1rem;
+    padding:0.5rem 2rem;
+    cursor: pointer;
+    bottom:3rem;
+    /* initially button hide */
+    display:none;
+    
+}
+.btn.active{
+    display: flex;
+}
+
+.win{
+    background-color: rgb(29, 210, 29);
+}
+
+.button{
+    position:absolute;
+    /* background-color:rgba(209, 17, 17, 0.925); */
+    color: white;
+    border: 2px solid white;
+    border-radius: 1rem;
+    padding:0.5rem 2rem;
+    cursor: pointer;
+    bottom:3rem;
+    background:none;
+    outline:none;
+}
